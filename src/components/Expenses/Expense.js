@@ -3,7 +3,7 @@ import "./Expense.css";
 import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
 
-function Expense(props) {
+const Expense = (props) => {
   const row = [];
 
   for (let index = 0; index < props.data.length; index++) {
