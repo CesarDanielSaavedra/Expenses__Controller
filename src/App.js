@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div>
-      <h2>Expenses!!!</h2>
+      <h2>Expenses Controler!</h2>
       <Expense data={expenses}></Expense>
     </div>
   );
