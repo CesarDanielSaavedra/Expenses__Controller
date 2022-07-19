@@ -1,0 +1,29 @@
+[33mcommit fa015c3bda8f32e2039cc37b75e7debb7721b978[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Daniel Saavedra <cesardsaavedra@gmail.com>
+Date:   Sat Jul 16 18:38:44 2022 -0300
+
+    A button added, to use 'useState' and state react function to update de expense's title
+
+[33mcommit 049b1c9ee6ab289dfca05cc9fbf3492c374cb31f[m
+Author: Daniel Saavedra <cesardsaavedra@gmail.com>
+Date:   Sat Jul 16 15:40:28 2022 -0300
+
+    An alternative syntax of function, arrow function, just added
+
+[33mcommit f0eb7532cef6645786379603b4d97960588d0d18[m
+Author: Daniel Saavedra <cesardsaavedra@gmail.com>
+Date:   Sat Jul 16 13:41:20 2022 -0300
+
+    Adds 'Expenses' and 'UI' folders to organice components
+
+[33mcommit c885d8bdf65e6ae9f3040f84e64341ffa21901c9[m
+Author: Daniel Saavedra <cesardsaavedra@gmail.com>
+Date:   Sat Jul 16 13:16:03 2022 -0300
+
+    Add Card component. This is a wraper or a shild style component
+
+[33mcommit 0887db8d83de13aecd6377eb7ff7b6901500ee46[m
+Author: Daniel Saavedra <cesardsaavedra@gmail.com>
+Date:   Sat Jul 16 12:49:54 2022 -0300
+
+    starting commit
