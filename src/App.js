@@ -23,28 +23,35 @@ const App = () => {
       date: new Date(2021, 2, 28),
     },
     {
-      id: "e4",
+      id: "e412",
       title: "New Desk (Wooden)",
       amount: 450,
       date: new Date(2021, 5, 12),
     },
     {
-      id: "e3",
+      id: "e3242",
       title: "Car Insurance",
-      amount: 294.67,
+      amount: 132.67,
       date: new Date(2021, 2, 28),
     },
     {
-      id: "e4",
+      id: "e124",
       title: "New Desk (Wooden)",
-      amount: 450,
+      amount: 12313,
       date: new Date(2021, 5, 12),
     },
   ];
 
+  const newExpenseAddedHandler = (newExpenseAdded) => {
+
+    console.log("estamos en la App");
+    console.log(newExpenseAdded);
+
+  }
+
   return (
     <div>
-      <NewExpenses/>
+      <NewExpenses onNewExpenseAdded={newExpenseAddedHandler}/>
       <Expense data={expenses}></Expense>
     </div>
   );
