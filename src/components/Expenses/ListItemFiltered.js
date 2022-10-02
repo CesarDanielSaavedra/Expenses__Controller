@@ -1,21 +1,23 @@
-import React from react;
+import React from "react";
+import ExpenseItem from "./ExpenseItem";
 
-const ListItemFiltered = () => {
+const ListItemFiltered = (props) => {
 
-    {filteredExpenses.map( (expense) => {
-        return (
-          <ExpenseItem
-            title={expense.title}
-            amount={expense.amount}
-            date={expense.date}
-            key={expense.id}
-          ></ExpenseItem>
+  // props.filteredExpenses = filteredExpenses
+
+  return (
+    <ul>
+      {props.expenses.map( (expense) => {
+        return (<ExpenseItem
+          title={expense.title}
+          amount={expense.amount}
+          date={expense.date}
+          key={expense.id}
+        ></ExpenseItem>
         );
-      })
-    }
-    
-    return();
-
+        })}
+    </ul>
+  );
 }
 
 export default ListItemFiltered;

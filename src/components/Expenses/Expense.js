@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import "./Expense.css";
-import ExpenseItem from "./ExpenseItem";
+//import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
 import ExpensesFilter from "./ExpensesFilter";
+import ListItemFiltered from "./ListItemFiltered";
 
 const Expense = (props) => {
  
@@ -27,7 +28,7 @@ const Expense = (props) => {
     <ExpensesFilter onChangeYearFilter={changeYearFilterHandler} yearSelected={selectedFilterYear}/>
 
     {/*this is the funtionality (map method) to reproduce in a new comp*/}
-    {filteredExpenses.map( (expense) => {
+    {/* {filteredExpenses.map( (expense) => {
         return (
           <ExpenseItem
             title={expense.title}
@@ -37,7 +38,8 @@ const Expense = (props) => {
           ></ExpenseItem>
         );
       })
-    }
+    } */}
+    <ListItemFiltered expenses={filteredExpenses} />
   </Card>
 
   );
