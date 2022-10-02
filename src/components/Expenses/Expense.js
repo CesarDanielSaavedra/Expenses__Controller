@@ -26,6 +26,7 @@ const Expense = (props) => {
 
     <ExpensesFilter onChangeYearFilter={changeYearFilterHandler} yearSelected={selectedFilterYear}/>
 
+    {/*this is the funtionality (map method) to reproduce in a new comp*/}
     {filteredExpenses.map( (expense) => {
         return (
           <ExpenseItem
