@@ -9,10 +9,14 @@ const Expense = (props) => {
  
   const expenses = props.data;
 
+  console.log(expenses);
+
   const [selectedFilterYear, setSelectedFilterYear] = useState("2021");
 
   const changeYearFilterHandler = (year) => {
+
     setSelectedFilterYear(year);
+
   }
 
   const filteredExpenses = expenses.filter((expense) => {

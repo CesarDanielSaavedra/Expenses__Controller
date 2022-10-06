@@ -1,17 +1,17 @@
 import React from "react";
 import ExpenseItem from "./ExpenseItem";
+import "./ListItemFiltered.css";
 
 const ListItemFiltered = (props) => {
 
-  // props.filteredExpenses = filteredExpenses
   if (props.expenses.length === 0) {
     return ( 
-      <h2> No expenses found for this selected Year </h2>
+      <h2 className="expenses-list__fallback"> No expenses found for this selected Year </h2>
     );
   }
 
   return (
-    <ul>
+    <ul className="expenses-list">
       {props.expenses.map( (expense) => (
         <ExpenseItem
           title={expense.title}
