@@ -57,6 +57,7 @@ const App = () => {
 
   return (
     <div>
+      <h1> Expenses Controller </h1>
       <NewExpenses onNewExpenseAdded={newExpenseAddedHandler}/>
       <Expense data={expenses}></Expense>
     </div>
